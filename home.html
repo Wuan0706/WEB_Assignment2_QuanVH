@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navigation Bar -->
+        <nav class="navbar" style="background-color: #172A51;">
+            <div class="container px-5">
+                <div class="nav-item">
+                    <a class="navbar-brand fw-bold text-light" href="index.html">Management System</a>
+                </div>
+                <div class="nav-item align-items-end">
+                    <div class="dropdown open  px-5 ">
+                        <a class="btn dropdown-toggle text-light" type="button" id="triggerId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="#">Sign up</a>
+                            <a class="dropdown-item" href="#">Help</a>
+
+                        </div>
+                    </div>
+
+                </div>
+        </nav>
+
+    <section class="container my-4">
+        <div class="bg-body rounded shadow-sm p-5 text-center">
+            <h1 class="fw-bold mb-2" style="color: #213249;">Welcome to My Website</h1>
+            <p class="text-muted">Learn web development with our courses.</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center fw-bold mb-4" style="color: #213249;">Our Courses</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card bg-body hover-card shadow-sm p-4 h-100 border-0">
+                    <h3 class="h4 fw-bold text-danger">HTML</h3>
+                    <p class="text-muted">Learn how to create the structure of web pages using headings, paragraphs, images, and links.</p>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#htmlModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-body hover-card shadow-sm p-4 h-100 border-0">
+                    <h3 class="h4 fw-bold text-primary">CSS</h3>
+                    <p class="text-muted">Learn how to style web pages with colors, fonts, spacing, and attractive layouts.</p>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#cssModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-body hover-card shadow-sm p-4 h-100 border-0">
+                    <h3 class="h4 fw-bold" style="color: #7952b3;">Bootstrap</h3>
+                    <p class="text-muted">Build responsive websites quickly using Bootstrap's grid system and components.</p>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#bootstrapModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-body hover-card shadow-sm p-4 h-100 border-0">
+                    <h3 class="h4 fw-bold text-warning text-dark">JavaScript</h3>
+                    <p class="text-muted">Make web pages interactive with button clicks, form validation, and dynamic content.</p>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#jsModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4 mt-5" style="background-color: #213249;">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 Management System</p>
+        </div>
+    </footer>
+
+    <!-- HTML Modal -->
+    <div class="modal fade" id="htmlModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom py-3">
+                    <h5 class="modal-title">Course Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>HTML</h6>
+                    <p class="text-muted small">HTML stands for HyperText Markup Language. It creates the structure of a web page using paragraphs, headings, images, and links.</p>
+                </div>
+                <div class="modal-footer border-top py-2">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSS Modal -->
+    <div class="modal fade" id="cssModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom py-3">
+                    <h5 class="modal-title">Course Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>CSS</h6>
+                    <p class="text-muted small">CSS stands for Cascading Style Sheets. It controls the appearance of web pages, including colors, fonts, spacing, and attractive layouts.</p>
+                </div>
+                <div class="modal-footer border-top py-2">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="bootstrapModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom py-3">
+                    <h5 class="modal-title">Course Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Bootstrap</h6>
+                    <p class="text-muted small">Bootstrap is a front-end framework. It provides ready-made components and a responsive grid system to build websites quickly.</p>
+                </div>
+                <div class="modal-footer border-top py-2">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Modal -->
+    <div class="modal fade" id="jsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom py-3">
+                    <h5 class="modal-title">Course Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>JavaScript</h6>
+                    <p class="text-muted small">JavaScript is a programming language that makes web pages interactive. It can handle button clicks, form validation, popups, and dynamic content.</p>
+                </div>
+                <div class="modal-footer border-top py-2">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (Bắt buộc phải có để Modal hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
